@@ -1,7 +1,11 @@
+import logging
+
 from fastapi import FastAPI
 
 from api.routers.journal_router import router as journal_router
 
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+logging.info("Journal API starting up")
 # TODO (Task 1): Configure logging here.
 # Reference: https://docs.python.org/3/howto/logging.html
 # Steps:
