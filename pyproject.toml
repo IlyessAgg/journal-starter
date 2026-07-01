@@ -11,6 +11,10 @@ dependencies = [
     "pydantic>=2",
     "pydantic-settings",
     "openai",
+    "opentelemetry-api>=1.43.0",
+    "opentelemetry-sdk>=1.43.0",
+    "opentelemetry-instrumentation-fastapi>=0.64b0",
+    "opentelemetry-exporter-otlp>=1.43.0",
 ]
 
 [project.optional-dependencies]

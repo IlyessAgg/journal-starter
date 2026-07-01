@@ -10,7 +10,7 @@
   
   "service": "devcontainer",
   "workspaceFolder": "/workspaces/",
-  "runServices": ["postgres"],
+  "runServices": ["postgres", "aspire-dashboard"],
   "forwardPorts": [8000],
   "portsAttributes": {
     "8000": {

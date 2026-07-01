@@ -3,6 +3,7 @@ import logging
 from fastapi import FastAPI
 
 from api.routers.journal_router import router as journal_router
+from api.telemetry import setup_telemetry
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logging.info("Journal API starting up")
@@ -12,3 +13,5 @@ app = FastAPI(
     description="A simple journal API for tracking daily work, struggles, and intentions",
 )
 app.include_router(journal_router)
+
+setup_telemetry(app)
